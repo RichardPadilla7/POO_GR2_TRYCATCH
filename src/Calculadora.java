@@ -99,7 +99,6 @@ public class Calculadora {
 
             System.out.println();
         }
-
         scanner.close();
     }
 }
