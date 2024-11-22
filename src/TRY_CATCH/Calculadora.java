@@ -1,3 +1,5 @@
+package TRY_CATCH;
+
 import java.util.Scanner;
 
 public class Calculadora {
@@ -23,7 +25,7 @@ public class Calculadora {
                     case 1: // Área del Círculo
                         System.out.print("Ingrese el radio del círculo: ");
                         double radio = Double.parseDouble(scanner.nextLine());
-                        Circulo circulo = new Circulo(radio);
+                        Circulo circulo = new Circulo(radio); //Objeto
                         System.out.println("El área del círculo es: " + circulo.calcularArea());
                         break;
 
@@ -39,7 +41,7 @@ public class Calculadora {
                         double base = Double.parseDouble(scanner.nextLine());
                         System.out.print("Ingrese la altura del triángulo: ");
                         double altura = Double.parseDouble(scanner.nextLine());
-                        Triangulo triangulo = new Triangulo(base, altura, 0, 0);
+                        Triangulo triangulo = new Triangulo(base, altura, 0, 0); //Objeto
                         System.out.println("El área del triángulo es: " + triangulo.calcularArea());
                         break;
 
@@ -50,7 +52,7 @@ public class Calculadora {
                         double lado2 = Double.parseDouble(scanner.nextLine());
                         System.out.print("Ingrese la base del triángulo: ");
                         base = Double.parseDouble(scanner.nextLine());
-                        triangulo = new Triangulo(base, 0, lado1, lado2);
+                        triangulo = new Triangulo(base, 0, lado1, lado2); //Objeto
                         System.out.println("El perímetro del triángulo es: " + triangulo.calcularPerimetro());
                         break;
 
@@ -59,7 +61,7 @@ public class Calculadora {
                         double largo = Double.parseDouble(scanner.nextLine());
                         System.out.print("Ingrese el ancho del rectángulo: ");
                         double ancho = Double.parseDouble(scanner.nextLine());
-                        Rectangulo rectangulo = new Rectangulo(largo, ancho);
+                        Rectangulo rectangulo = new Rectangulo(largo, ancho); //Objeto
                         System.out.println("El área del rectángulo es: " + rectangulo.calcularArea());
                         break;
 
@@ -68,7 +70,7 @@ public class Calculadora {
                         largo = Double.parseDouble(scanner.nextLine());
                         System.out.print("Ingrese el ancho del rectángulo: ");
                         ancho = Double.parseDouble(scanner.nextLine());
-                        rectangulo = new Rectangulo(largo, ancho);
+                        rectangulo = new Rectangulo(largo, ancho); //Objeto
                         System.out.println("El perímetro del rectángulo es: " + rectangulo.calcularPerimetro());
                         break;
 
@@ -92,10 +94,8 @@ public class Calculadora {
             } catch (Exception e) {
                 System.out.println("Hubo un error!. Intente de nuevo.");
             }
-
             System.out.println();
         }
-
         scanner.close();
     }
 }

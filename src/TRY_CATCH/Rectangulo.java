@@ -1,3 +1,5 @@
+package TRY_CATCH;
+
 public class Rectangulo {
     private double largo;
     private double ancho;
