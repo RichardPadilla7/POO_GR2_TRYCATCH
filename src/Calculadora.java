@@ -88,17 +88,14 @@ public class Calculadora {
             } catch (NumberFormatException e) {
                 System.out.println("Error: Debes ingresar un número válido.");
 
-                //  se lanza cuando un metodo detecta que uno de los argumentos proporcionados no cumple con las condiciones esperadas
-            } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage());
-
-                // Captura cualquier excepción que no haya sido manejada explícitamente por los bloques catch anteriores
+                // Captura cualquier otra excepción no manejada específicamente.
             } catch (Exception e) {
-                System.out.println("Error inesperado.");
+                System.out.println("Hubo un error!. Intente de nuevo.");
             }
 
             System.out.println();
         }
+
         scanner.close();
     }
 }
